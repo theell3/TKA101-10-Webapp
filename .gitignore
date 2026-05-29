@@ -1,0 +1,10 @@
+# 忽略 Mac 系統產生的垃圾檔
+.DS_Store
+
+# 忽略 Eclipse / IDE 專案設定檔
+.classpath
+.project
+.settings/
+
+# 忽略編譯後的執行檔目錄
+bin/
