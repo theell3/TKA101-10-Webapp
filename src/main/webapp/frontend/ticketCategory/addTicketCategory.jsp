@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<title>票券種類資料新增 - addTicketCategory.jsp</title>
+<title>門票分類資料新增 - addTicketCategory.jsp</title>
 
 <style>
   table#table-1 {
@@ -75,16 +75,16 @@
 <table>
 	
 	<tr>
-		<td>票券種類名稱:</td>
+		<td>門票分類名稱:</td>
 		<td><input type="TEXT" name="ticketCategoryName" value="<%= (ticketCategoryVO==null)? "測試用" : ticketCategoryVO.getTicketCategoryName()%>" size="45"/></td>
 	</tr>
 	
 	<tr>
-		<td>票券狀態:<font color=red><b>*</b></font></td>
+		<td>門票分類狀態:<font color=red><b>*</b></font></td>
 		<td>
 			<select size="1" name="ticketCategoryStatus">
-				<option value="1" ${(ticketCategoryVO.ticketCategoryStatus == 1)? 'selected':'' }>上架販售</option>
-				<option value="0" ${(ticketCategoryVO.ticketCategoryStatus == 0)? 'selected':'' }>暫不販售</option>
+				<option value="1" ${(ticketCategoryVO.ticketCategoryStatus == 1)? 'selected':'' }>啟用</option>
+				<option value="0" ${(ticketCategoryVO.ticketCategoryStatus == 0)? 'selected':'' }>暫不啟用</option>
 			</select>
 		</td>
 	</tr>
