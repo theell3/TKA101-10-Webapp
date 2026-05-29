@@ -48,7 +48,7 @@
 
 <table id="table-1">
 	<tr><td>
-		 <h3>票券種類資料新增 - addTicketCategory.jsp</h3></td><td>
+		 <h3>門票分類資料新增 - addTicketCategory.jsp</h3></td><td>
 		 <h4>
 		    <a href="<%=request.getContextPath()%>/frontend/ticketCategory/select_page.jsp">回首頁</a>
 		</h4>
@@ -84,7 +84,7 @@
 		<td>
 			<select size="1" name="ticketCategoryStatus">
 				<option value="1" ${(ticketCategoryVO.ticketCategoryStatus == 1)? 'selected':'' }>啟用</option>
-				<option value="0" ${(ticketCategoryVO.ticketCategoryStatus == 0)? 'selected':'' }>暫不啟用</option>
+				<option value="0" ${(ticketCategoryVO.ticketCategoryStatus == 0)? 'selected':'' }>停用</option>
 			</select>
 		</td>
 	</tr>

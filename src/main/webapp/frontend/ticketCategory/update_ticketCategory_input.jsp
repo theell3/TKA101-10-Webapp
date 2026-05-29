@@ -49,7 +49,7 @@
 
 <table id="table-1">
 	<tr><td>
-		 <h3>票券分類資料修改 - update_ticketCategory_input.jsp</h3>
+		 <h3>門票分類資料修改 - update_ticketCategory_input.jsp</h3>
 		 <h4>
 		    <a href="<%=request.getContextPath()%>/frontend/ticketCategory/select_page.jsp">回首頁</a>
 		</h4>

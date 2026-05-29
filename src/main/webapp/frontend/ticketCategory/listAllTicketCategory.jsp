@@ -51,7 +51,7 @@
 
 <table id="table-1">
 	<tr><td>
-		 <h3>所有票券分類資料 - listAllTicketCategory.jsp</h3>
+		 <h3>所有門票分類資料 - listAllTicketCategory.jsp</h3>
 		 <h4>
 		    <a href="<%=request.getContextPath()%>/frontend/ticketCategory/select_page.jsp">回首頁</a>
 		</h4>
@@ -84,7 +84,10 @@
 		<tr>
 			<td>${ticketCategoryVO.ticketCategoryId}</td>
 			<td>${ticketCategoryVO.ticketCategoryName}</td>
-			<td>${ticketCategoryVO.ticketCategoryStatus}</td>
+			<td>
+			    <c:if test="${ticketCategoryVO.ticketCategoryStatus == 0}">0：停用</c:if>
+			    <c:if test="${ticketCategoryVO.ticketCategoryStatus == 1}">1：啟用</c:if>
+			</td>
 			
 			<td>
 			  <FORM METHOD="post" ACTION="<%=request.getContextPath()%>/ticketCategory/ticketCategory.do" style="margin-bottom: 0px;">
